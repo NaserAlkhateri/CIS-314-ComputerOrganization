@@ -1,0 +1,15 @@
+Naser Alkhateri - CIS314 Assignment 7
+
+Questions 1
+
+A:
+There are 4 reads given. The outer loop runs 16 times and the inner loop runs 16 times.
+4 * 16 * 16 = 1024 is the number of reads.
+
+B:
+Every time you enter the first loop, the entire struct is read 16 times. A miss occurs 
+every second struct read. Therefore, the cache will miss 16 * (16/2) = 128
+
+C:
+The miss rate is the number of misses divided by number of reads.
+128/1024 = 0.125 which is 12.5%
